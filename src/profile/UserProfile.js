@@ -21,6 +21,7 @@ export const UserProfile = () => {
   const handleDelete =(id)=>{
     deleteBooking(id).then((res)=> console.log(res))
     .catch((err)=>console.log(err))
+    window.alert("Movie Deleted Success")
     navigate("/")
   }
   return (

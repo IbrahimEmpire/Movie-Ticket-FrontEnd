@@ -23,6 +23,11 @@ export const Booking = () => {
      newBooking({...input, movie: movie._id}).then((res)=>  console.log(res)).catch((err)=> console.log(err))
      navigate("/movies")
     }
+    const booking = ()=>{
+      window.alert("Movie Booked, See Your Profile ")
+    
+
+    }
   return (
     <div>
       {
@@ -71,7 +76,7 @@ export const Booking = () => {
                    </FormLabel>
                    <TextField value={input.date}
                    onChange={handleChange} name='date' type='date' margin='normal' variant='standard'></TextField>
-                   <Button type='submit' sx={{ mt: 3}}>Book Now</Button>
+                   <Button onClick={booking} type='submit' sx={{ mt: 3}}>Book Now</Button>
                 </Box>
               </form>
             </Box>
