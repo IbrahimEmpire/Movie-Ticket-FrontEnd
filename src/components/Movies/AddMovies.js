@@ -22,6 +22,7 @@ export const AddMovies = () => {
         console.log(input, actors)
        
         addMovie({...input,actors}).then((res)=> console.log(res)).catch((err)=> console.log(err))
+        window.alert("Movie Added Success")
         navigate("/")
     }
   return (
